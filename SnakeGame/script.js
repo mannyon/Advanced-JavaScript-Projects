@@ -26,12 +26,17 @@ function gameEngine() {
     // Part 1: Updating the snake  array & food
 
     // Part 2: Display the snake and Food
+    // Display the snake
     board.innerHtml = "";
     snakeArr.forEach((e, index) => {
         snakeElement = document.createElement('div');
         snakeElement.style.gridRowStart = e.y;
         snakeElement.style.gridColumnStart = e.x;
+        snakeElement.classList.add('food');
+        board.appendChild(snakeElement);
     })
+    // Display the Food
+    
 }
 
 
