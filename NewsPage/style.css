@@ -69,6 +69,11 @@ nav h1{
     cursor: pointer;
 }
 
+.box{
+    text-decoration: none;
+    color: inherit;
+}
+
 .box img{
     width: 90%;
     height: 45%;
