@@ -18,7 +18,7 @@ async function myNews() {
     let response = await fetch(url);
     let news = await response.json();
     console.log(news);
-    let m = Math.floor(Math.random() * 80) + 1;
+    let m = Math.floor(Math.random() * 90) + 1;
     for (let i = m; i < m+8; i++) {
         
         let box = document.createElement('a');
