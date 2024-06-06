@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,7 @@
                 <li>About</li>
                 <li>Services</li>
                 <li>Contact</li>
-                <button>Login</button>
+                <button id="login-btn">Login</button>
             </ul>
         </nav>
 
@@ -26,15 +27,48 @@
                 </div>
                 <div class="info">
                     <div class="username">
-                        <p>username</p>
+                        <p>Username</p>
                         <div class="username-info">
                             <input type="text" placeholder="codehal">
-                            <img src="" alt="">
+                            <i class="fa-solid fa-user"></i>
                         </div>
+                        <hr>
+                    </div>
+
+                    <div class="username">
+                        <p>Email</p>
+                        <div class="username-info">
+                            <input type="email" placeholder="abc@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="username">
+                        <p>Password</p>
+                        <div class="username-info">
+                            <input type="password" placeholder="Enter Password">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" name="option1" value="value1">
+                        <span>I agree to the terms & conditions</span>
+                    </label>
+
+                    <div class="register-btn">
+                        <button>Register</button>
+                    </div>
+
+                    <div class="already-acc">
+                        <p>Already have an account? <span>Login</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
