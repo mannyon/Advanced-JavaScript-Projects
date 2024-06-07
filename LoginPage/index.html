@@ -21,7 +21,7 @@
         </nav>
 
         <div class="hero">
-            <div class="login-page">
+            <div class="register-page">
                 <div class="heading">
                     <h1>Registration</h1>
                 </div>
@@ -29,7 +29,7 @@
                     <div class="username">
                         <p>Username</p>
                         <div class="username-info">
-                            <input type="text" placeholder="codehal">
+                            <input type="text" placeholder="Enter Username">
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <hr>
@@ -63,8 +63,41 @@
                     </div>
 
                     <div class="already-acc">
-                        <p>Already have an account? <span>Login</span></p>
+                        <p>Already have an account? <span id="logintypeBtn">Login</span></p>
                     </div>
+                </div>
+            </div>
+
+            <div class="login-page">
+                <div class="heading">
+                    <h1>Login</h1>
+                </div>
+                <div class="username login-email">
+                    <div class="username-info">
+                        <input type="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <hr>
+                </div>
+                <div class="username login-password">
+                    <div class="username-info">
+                        <input type="password" placeholder="Password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <hr>
+                </div>
+                <label class="login-label">
+                    <input type="checkbox" name="option1" value="value1">
+                    <span>Remeber me</span>
+                </label>
+                <div class="forget-password">
+                    <span>Forgot Password?</span>
+                </div>
+                <div class="register-btn login-btn">
+                    <button>Login</button>
+                </div>
+                <div class="already-acc">
+                    <p id="donacc">Don't have an account? <span id="registertypeBtn">Register</span></p>
                 </div>
             </div>
         </div>
