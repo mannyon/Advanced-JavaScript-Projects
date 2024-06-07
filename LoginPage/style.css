@@ -48,6 +48,9 @@ nav ul li{
     padding-top: 10px;
     cursor: pointer;
 }
+nav ul li:hover{
+    text-decoration: underline;
+}
 
 nav ul button{
     padding: 10px 40px;
@@ -67,7 +70,9 @@ nav ul button{
     justify-content: center;
 }
 
-.login-page{
+/* ***************Registration Page******************** */
+
+.register-page{
     width: 440px;
     height: 530px;
     background: transparent;
@@ -76,17 +81,6 @@ nav ul button{
     border: 2px solid rgb(226, 224, 224);
     scale: 0.1;
     display: none;
-}
-
-@keyframes grow {
-    0% {
-        scale: 0.1;
-        display: none;  
-    }
-    100% {
-        scale: 1;
-        display: block;  
-    }
 }
 
 .heading {
@@ -172,4 +166,62 @@ label input:checked ~ .checkmark {
     color: #162938;
     cursor: pointer;
     font-weight: 500;
+}
+.already-acc span:hover{
+    text-decoration: underline;
+}
+
+/* ********************Login Page**************************** */
+
+.login-page{
+    width: 440px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid rgb(226, 224, 224);
+    position: relative;
+    scale: 0.1;
+    display: none;
+}
+@keyframes grow {
+    0% {
+        scale: 0.1;
+        display: none;  
+    }
+    100% {
+        scale: 1;
+        display: block;  
+    }
+}
+.login-email{
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+.login-email input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+}
+.login-password input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+}
+.forget-password{
+    position: absolute;
+    right: 50px;
+    top: 291px;
+    font-weight: 400;
+}
+.forget-password span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-btn{
+    margin-top: 20px;
+}
+.login-btn button{
+    padding: 10px 145px;
+}
+#donacc{
+    color: #162938;
 }
