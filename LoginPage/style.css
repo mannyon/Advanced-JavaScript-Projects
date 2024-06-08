@@ -225,3 +225,21 @@ label input:checked ~ .checkmark {
 #donacc{
     color: #162938;
 }
+.cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #162938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.cross i{
+    font-size: 20px;
+}
