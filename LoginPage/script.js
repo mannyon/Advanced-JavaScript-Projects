@@ -22,3 +22,13 @@ document.getElementById('logintypeBtn').addEventListener('click', function () {
     document.querySelector('.register-page').style.animation = '';
     document.querySelector('.register-page').style.display = 'none';
 })
+
+document.getElementById('registerCross').addEventListener('click', function() {
+    document.querySelector('.register-page').style.display = 'none';
+    document.querySelector('.register-page').style.animation = '';
+})
+
+document.getElementById('loginCross').addEventListener('click', function() {
+    document.querySelector('.login-page').style.display = 'none';
+    document.querySelector('.login-page').style.animation = '';
+})
