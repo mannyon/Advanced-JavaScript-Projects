@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -28,6 +32,31 @@
                 <input type="text" placeholder="Search">
             </div>
         </nav>
-    </div>   
+        <div class="hero">
+            <div class="left">
+                <img src="images/the-65-title.png" alt="">
+                <h2><span>2023</span> <span class="right-line"></span> <span id="rating">15+</span> <span
+                        class="right-line"></span> <span id="duration">1h 33min </span> <span class="right-line"></span>
+                    <span id="genre">Action</span></h2>
+                <p>A spaceship crashes on an unknown planet, only to discover he's actually stranded on prehistoric Earth 65 million years ago. Battling the harsh environment and dangerous creatures, Mills must use his skills and ingenuity to survive and find a way back home. The film blends intense action with the suspense of survival in an unfamiliar, hostile world.</p>
+                <button id="watch-btn"><i class="fa-solid fa-play"></i> WATCH</button>
+                <button id="myList-btn"><i class="fa-solid fa-plus"></i> MY LIST</button>
+            </div>
+            <div class="right">
+                <div class="gallery">
+                    <div id="images-scroll">
+                        <span><img src="moviesImages/the-black-demon.jpg"></span>
+                        <span><img src="moviesImages/the-covenant.jpg"></span>
+                        <span id="movie65"><img src="moviesImages/65.jpg"></span>
+                        <span><img src="moviesImages/the-little-mermaid.jpeg"></span>
+                        <span><img src="moviesImages/the-tank.jpeg"></span>
+                        <!-- <span><img src="moviesImages/the-black-demon.jpg"></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
