@@ -1,27 +1,65 @@
-let scrollContainer = document.querySelector(".gallery");
+const images = document.querySelectorAll('#images-scroll img');
+const allImages = document.getElementsByClassName("allImages");
+const container = document.querySelector('.container');
 
-// scrollContainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollContainer.scrollLeft += evt.deltaY;
-//     console.log(evt.deltaY);
-//     scrollContainer.style.scrollBehavior = "auto";
-// });
+document.getElementById('movie65').style.scale = '1.2';
+document.getElementById('movie65').style.transition = 'all 0.3s';
 
-// const images = document.querySelectorAll('#images-scroll img');
+function scaleImage(event) {
+    document.getElementById('movie65').style.scale = '';
+    let imgContainer;
+    images.forEach(img => {
+        img.classList.remove('scale-up');
+        if(event.target === img){
+            imgContainer = img;
+        }
+    });
+    event.target.classList.add('scale-up');
+    if(imgContainer.src.includes('the-black-demon')){
+        container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-the-black-demon.jpeg') no-repeat center center/cover";
+        document.getElementById('title-logo').src = 'images/the-black-demon-title.png';
+        document.getElementById('rating').innerHTML = '16+';
+        document.getElementById('duration').innerHTML = '1h 40min';
+        document.getElementById('genre').innerHTML = 'Thriller';
+        document.getElementById('description').innerHTML = "Oilman Paul Sturges' idyllic family vacation turns into a living nightmare when they encounter a gigantic megalodon shark that will stop at nothing to protect its territory. Stranded and under constant attack, Paul and his family must somehow find a way to get back to shore alive before it strikes again.";
+    }
+    if(imgContainer.src.includes('the-covenant')){
+        container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-the-covenant.jpeg') no-repeat center center/cover";
+        document.getElementById('title-logo').src = 'images/the-covenant-title.png';
+        document.getElementById('rating').innerHTML = '12+';
+        document.getElementById('duration').innerHTML = '2h 03min';
+        document.getElementById('genre').innerHTML = 'War/Action';
+        document.getElementById('description').innerHTML = "The Covenant is a 2023 action drama film set in the Afghanistan War. It tells the story of a U.S. Army Sergeant, John Kinley, and his Afghan interpreter, Ahmed.The film explores the bond between soldier and interpreter, tested when Ahmed risks his life to save Kinley's.";
 
-// function scaleImage(event) {
-//     images.forEach(img => {
-//         // Remove the scale-up class from all images
-//         img.classList.remove('scale-up');
-//         img.classList.add('allScale')
-//         img.removeAttribute('id');
-//     });
+    }
+    if(imgContainer.src.includes('65')){
+        container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-65.jpeg') no-repeat center center/cover";
+        document.getElementById('title-logo').src = 'images/the-65-title.png';
+        document.getElementById('rating').innerHTML = '15+'
+        document.getElementById('duration').innerHTML = '1h 33min';
+        document.getElementById('genre').innerHTML = 'Action';
+        document.getElementById('description').innerHTML = "A spaceship crashes on an unknown planet, only to discover he's actually stranded on prehistoric Earth 65 million years ago. Battling the harsh environment and dangerous creatures, Mills must use his skills and ingenuity to survive and find a way back home. The film blends intense action with the suspense of survival in an unfamiliar, hostile world.";
+    }
+    if(imgContainer.src.includes('little-mermaid')){
+        container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-little-mermaid.jpg') no-repeat center center/cover";
+        document.getElementById('title-logo').src = 'images/the-little-mermaid-title.png';
+        document.getElementById('rating').innerHTML = '12+'
+        document.getElementById('duration').innerHTML = '2h 14min'; 
+        document.getElementById('genre').innerHTML = 'Romance'; 
+        document.getElementById('description').innerHTML = "The youngest of King Triton's daughters, Ariel is a beautiful and spirited young mermaid with a thirst for adventure. Longing to find out more about the world beyond the sea, Ariel visits the surface and falls for the dashing Prince Eric. Following her heart, she makes a deal with the evil sea witch, Ursula, to experience life on land."; 
+    }
+    if(imgContainer.src.includes('the-tank')){
+        container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-the-tank.jpeg') no-repeat center center/cover";
+        document.getElementById('title-logo').src = 'images/the-tank-title.png';
+        document.getElementById('rating').innerHTML = '15+'
+        document.getElementById('duration').innerHTML = '1h 40min';
+        document.getElementById('genre').innerHTML = 'Horror';
+        document.getElementById('description').innerHTML = "A family inherits a beautiful coastal property with a dark secret.  The husband, Ben, discovers a hidden water tank and while investigating, awakens a terrifying, ancient creature lurking within.  This unleashes chaos as the family fights for survival against the monstrous beings.";
+    }
+}
 
-//     // Add the scale-up class to the clicked image
-//     event.target.classList.add('scale-up');
-//     console.log(event.target);
-// }
+images.forEach(img => {
+    img.addEventListener('click', scaleImage);
+});
 
-// images.forEach(img => {
-//     img.addEventListener('click', scaleImage);
-// });
+
