@@ -160,9 +160,8 @@ nav{
 
 /* ***********Gallery****************** */
 .right{
-    width: 53%;
+    width: 55%;
     height: 450px;
-    overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -173,16 +172,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow-x: scroll; */
 }
 
 .gallery div{
     width: 100%;
     height: 100%;
     display: flex;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -191,7 +186,7 @@ nav{
     width: 160px;
     /* filter: grayscale(100%); */
     cursor: pointer;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
     border-radius: 10px;
 }
 
@@ -210,6 +205,24 @@ nav{
     cursor: pointer;
     transform: scale(1.1);
 } */
-#movie65{
+ #movie65{
+    transition: all 0.3s;
+ }
+ #movie65:hover{
+    scale: 1.2;
+ }
+.allImages img {
+    transition: transform 0.3s;
+}
+.allImages img.scale-up {
+    transform: scale(1.2);
+}
+.allScale{
+    scale: 1;
+}
+.allImages{
+    transition: all 0.3s;
+}
+.allImages:hover{
     scale: 1.2;
 }
