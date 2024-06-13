@@ -1,6 +1,9 @@
 const images = document.querySelectorAll('#images-scroll img');
 const allImages = document.getElementsByClassName("allImages");
 const container = document.querySelector('.container');
+const watchTrailerBtn = document.getElementById('watch-trailer-btn');
+const crossBtn = document.querySelector('.cross-btn');
+
 
 document.getElementById('movie65').style.scale = '1.2';
 document.getElementById('movie65').style.transition = 'all 0.3s';
@@ -61,5 +64,13 @@ function scaleImage(event) {
 images.forEach(img => {
     img.addEventListener('click', scaleImage);
 });
+
+watchTrailerBtn.addEventListener('click', function() {
+    document.querySelector('.youtube-container').style.display = 'block';
+})
+
+crossBtn.addEventListener('click', function() {
+    document.querySelector('.youtube-container').style.display = 'none';
+})
 
 
