@@ -3,14 +3,17 @@ const allImages = document.getElementsByClassName("allImages");
 const container = document.querySelector('.container');
 const watchTrailerBtn = document.getElementById('watch-trailer-btn');
 const crossBtn = document.querySelector('.cross-btn');
+let imgContainer = document.getElementById('imgMovie65');
 
+let div = document.createElement('div');
+div.innerHTML = '<div class="cross-btn"><i class="fa-solid fa-xmark"></i></div><iframe width="700" height="400" src="https://www.youtube.com/embed/bHXejJq5vr0?si=DgdsH8DeDlItHAbP" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 
 document.getElementById('movie65').style.scale = '1.2';
 document.getElementById('movie65').style.transition = 'all 0.3s';
 
 function scaleImage(event) {
     document.getElementById('movie65').style.scale = '';
-    let imgContainer;
+    
     images.forEach(img => {
         img.classList.remove('scale-up');
         if(event.target === img){
@@ -32,7 +35,7 @@ function scaleImage(event) {
         document.getElementById('rating').innerHTML = '12+';
         document.getElementById('duration').innerHTML = '2h 03min';
         document.getElementById('genre').innerHTML = 'War/Action';
-        document.getElementById('description').innerHTML = "The Covenant is a 2023 action drama film set in the Afghanistan War. It tells the story of a U.S. Army Sergeant, John Kinley, and his Afghan interpreter, Ahmed.The film explores the bond between soldier and interpreter, tested when Ahmed risks his life to save Kinley's.";
+        document.getElementById('description').innerHTML = "The Covenant is a 2023 war action film set in the Afghanistan War. It tells the story of a U.S. Army Sergeant, John Kinley, and his Afghan interpreter, Ahmed.The film explores the bond between soldier and interpreter, tested when Ahmed risks his life to save Kinley's.";
 
     }
     if(imgContainer.src.includes('65')){
@@ -42,6 +45,7 @@ function scaleImage(event) {
         document.getElementById('duration').innerHTML = '1h 33min';
         document.getElementById('genre').innerHTML = 'Action';
         document.getElementById('description').innerHTML = "A spaceship crashes on an unknown planet, only to discover he's actually stranded on prehistoric Earth 65 million years ago. Battling the harsh environment and dangerous creatures, Mills must use his skills and ingenuity to survive and find a way back home. The film blends intense action with the suspense of survival in an unfamiliar, hostile world.";
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/bHXejJq5vr0?si=DgdsH8DeDlItHAbP';
     }
     if(imgContainer.src.includes('little-mermaid')){
         container.style.background = "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('moviesImages/bg-little-mermaid.jpg') no-repeat center center/cover";
@@ -67,10 +71,28 @@ images.forEach(img => {
 
 watchTrailerBtn.addEventListener('click', function() {
     document.querySelector('.youtube-container').style.display = 'block';
+    if(imgContainer.src.includes('65')){
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/bHXejJq5vr0?si=DgdsH8DeDlItHAbP';
+    }
+    if(imgContainer.src.includes('the-tank')){
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/23GmhsmrCIo?si=8S5NMoukpNqMX7_1';
+    }
+    if(imgContainer.src.includes('little-mermaid')){
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/kpGo2_d3oYE?si=Cerz2Zgl9OXTQZ2Y';
+    }
+    if(imgContainer.src.includes('the-covenant')){
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/02PPMPArNEQ?si=BZiKrghSiiabs7J9';
+    }
+    if(imgContainer.src.includes('the-black-demon')){
+        document.getElementById('iframe').src = 'https://www.youtube.com/embed/z1xJAyVKAPY?si=B4sUwbCTl00h4q1Z';
+    }
 })
 
 crossBtn.addEventListener('click', function() {
+    console.log("hello");
     document.querySelector('.youtube-container').style.display = 'none';
+    document.getElementById('iframe').src = '';
 })
+
 
 

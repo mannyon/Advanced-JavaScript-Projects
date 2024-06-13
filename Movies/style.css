@@ -211,6 +211,8 @@ nav{
 footer{
     width: 100%;
     padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
 }
 .watch-trailer{
     display: flex;
@@ -253,5 +255,14 @@ footer{
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     color: #fff;
+    cursor: pointer;
+}
+.social-media{
+    display: flex;
+    color: #fff;
+    gap: 20px;
+    font-size: 20px;
+}
+.social-media i{
     cursor: pointer;
 }
