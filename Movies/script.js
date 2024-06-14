@@ -5,9 +5,6 @@ const watchTrailerBtn = document.getElementById('watch-trailer-btn');
 const crossBtn = document.querySelector('.cross-btn');
 let imgContainer = document.getElementById('imgMovie65');
 
-let div = document.createElement('div');
-div.innerHTML = '<div class="cross-btn"><i class="fa-solid fa-xmark"></i></div><iframe width="700" height="400" src="https://www.youtube.com/embed/bHXejJq5vr0?si=DgdsH8DeDlItHAbP" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
-
 document.getElementById('movie65').style.scale = '1.2';
 document.getElementById('movie65').style.transition = 'all 0.3s';
 
@@ -69,7 +66,7 @@ images.forEach(img => {
     img.addEventListener('click', scaleImage);
 });
 
-watchTrailerBtn.addEventListener('click', function() {
+function watchTrailer() {
     document.querySelector('.youtube-container').style.display = 'block';
     if(imgContainer.src.includes('65')){
         document.getElementById('iframe').src = 'https://www.youtube.com/embed/bHXejJq5vr0?si=DgdsH8DeDlItHAbP';
@@ -86,10 +83,9 @@ watchTrailerBtn.addEventListener('click', function() {
     if(imgContainer.src.includes('the-black-demon')){
         document.getElementById('iframe').src = 'https://www.youtube.com/embed/z1xJAyVKAPY?si=B4sUwbCTl00h4q1Z';
     }
-})
+}
 
 crossBtn.addEventListener('click', function() {
-    console.log("hello");
     document.querySelector('.youtube-container').style.display = 'none';
     document.getElementById('iframe').src = '';
 })
