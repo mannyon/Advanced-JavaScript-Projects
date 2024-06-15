@@ -269,3 +269,75 @@ footer{
 #myList-btn:hover{
     background: rgb(255, 64, 0);
 }
+
+/* ***************Media Queries************************ */
+@media (max-width:1495px) {
+    #images-scroll{
+        overflow: scroll;
+    }
+}
+@media (max-width: 412px) {
+    .heading h1{
+        position: absolute;
+        top: 20px;
+        right: 120px;
+        font-size: 40px;
+    }
+    .list{
+        position: absolute;
+        right: 70px;
+        top: 90px;
+    }
+    .search{
+        position: absolute;
+        right: 10px;
+        top: 130px;
+    }
+    .title-box{
+        position: absolute;
+        top: 180px;
+        left: 50px;
+    }
+    .title-box img{
+        width: 190px;
+    }
+    .left h2{
+        position: absolute;
+
+    }
+    .left p{
+        position: absolute;
+        top: 42%;
+    }
+    .left .hero-btn {
+        position: absolute;
+        top: 56%;
+    }
+
+    .right{
+        position: absolute;
+        top: 60%;
+        height: 300px;
+        width: 100%;
+    }
+    footer{
+        position: absolute;
+        bottom: 30px;
+    }
+    .watch-trailer{
+        position: absolute;
+        left: 10px;
+    }
+    .social-media{
+        position: absolute;
+        right: 30px;
+    }
+    .youtube-container{
+        position: absolute;
+        right: 7px;
+    }
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+}
