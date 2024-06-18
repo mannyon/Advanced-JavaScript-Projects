@@ -7,14 +7,10 @@
     font-family: "Inter", sans-serif;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-}
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 200vh;
     background-color: #141720;
     padding: 0 130px;
 }
@@ -27,6 +23,9 @@ nav{
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+#h1none{
+    display: none;
 }
 .left-nav{
     display: flex;
@@ -101,6 +100,102 @@ nav{
     display: none;
 }
 
+/* ****************movie-poster************** */
+
+.movie-poster{
+    width: 100%;
+    height: 450px;
+    background-image: url(images/John-Wick-3.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+.mpCategories{
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 100px;
+    gap: 20px;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.mpCategories i{
+    color: #055ABC;
+    margin-right: 8px;
+}
+.mpCategories span{
+    background-color: #055ABC;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+.mpMovieName{
+    width: 100%;
+    height: calc(100% - 290px);
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+}
+.mpMovieName h1{
+    font-size: 3.6vw;
+}
+
+/* ***********************list********************** */
+
+.list{
+    width: 100%;
+    height: 80px;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: #172032;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.listGenres select{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.listGenres select option{
+    color: #fff;
+    background-color: #141720;
+}
+
+.genres-btn{
+    height: 40px;
+    width: 270px;
+    background-color: #141720;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+.genres-btn button{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+.genres-btn button:hover{
+    background-color: #172032;
+    cursor: pointer;
+    color: #055ABC;
+}
+
+
+
+
+/* ******************media queries********************* */
 
 @media (max-width:600px) {
     .container{
@@ -115,6 +210,9 @@ nav{
         color: #fff;
         font-weight: 600;
         margin-right: -65px;
+    }
+    #h1none{
+        display: block;
     }
     .right-nav .search-glass{
         display: block;
@@ -138,6 +236,31 @@ nav{
         position: absolute;
         top: 44%;
         right: 1%;
-
+    }
+    .movie-poster{
+        display: none;
+    }
+    .list{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        height: 120px;
+    }
+    .listGenres select{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        font-size: 4vw;
+        font-weight: 500;
+        /* margin-top: 10px; */
+    }
+    .genres-btn{
+        width: 260px;
+        margin-top: 15px;
+    }
+    .genres-btn button{
+        font-size: 4vw;
     }
 }
