@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,53 +8,61 @@
 }
 
 
-.container{
+.container {
     width: 100%;
-    height: 700vh;
+    height: 900vh;
     background-color: #141720;
     padding: 0 130px;
 }
 
 /* *****************Nav Bar********************** */
 
-nav{
+nav {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-#h1none{
+
+#h1none {
     display: none;
 }
-.left-nav{
+
+.left-nav {
     display: flex;
     align-items: center;
     gap: 80px;
     color: #fff;
 }
-.left-nav h1{
+
+.left-nav h1 {
     font-size: 2vw;
 }
-.left-nav h1 span{
+
+.left-nav h1 span {
     color: #055ABC;
 }
-.left-nav a{
+
+.left-nav a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
 }
-.left-nav  i{
+
+.left-nav i {
     font-size: 8px;
     margin-left: -75px;
     color: rgb(204, 40, 40);
 }
-.right-nav{
+
+.right-nav {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.input-div{
+
+.input-div {
     width: 270px;
     height: 45px;
     background-color: #172032;
@@ -64,7 +72,8 @@ nav{
     align-items: center;
     padding-right: 20px;
 }
-.input-div input{
+
+.input-div input {
     width: 80%;
     height: 100%;
     border-radius: 20px;
@@ -75,14 +84,17 @@ nav{
     padding: 0 20px;
     flex: 1;
 }
-.input-div input::placeholder{
+
+.input-div input::placeholder {
     color: #fff;
 }
-.input-div i{
+
+.input-div i {
     font-size: 1.4vw;
     color: #055ABC;
 }
-.right-nav button{
+
+.right-nav button {
     border: 0;
     outline: none;
     font-size: 1.1vw;
@@ -90,19 +102,22 @@ nav{
     color: #fff;
     cursor: pointer;
 }
-.right-nav button i{
+
+.right-nav button i {
     color: #055ABC;
 }
-.menu-bar{
+
+.menu-bar {
     display: none;
 }
-.right-nav .search-glass{
+
+.right-nav .search-glass {
     display: none;
 }
 
 /* ****************movie-poster************** */
 
-.movie-poster{
+.movie-poster {
     width: 100%;
     height: 450px;
     background-image: url(images/John-Wick-3.jpg);
@@ -111,7 +126,8 @@ nav{
     cursor: pointer;
     color: white;
 }
-.mpCategories{
+
+.mpCategories {
     height: 290px;
     display: flex;
     align-items: flex-end;
@@ -120,31 +136,35 @@ nav{
     font-size: 1.1vw;
     font-weight: 500;
 }
-.mpCategories i{
+
+.mpCategories i {
     color: #055ABC;
     margin-right: 8px;
 }
-.mpCategories span{
+
+.mpCategories span {
     background-color: #055ABC;
     width: 40px;
     text-align: center;
     border-radius: 5px;
     font-size: 1.2vw;
 }
-.mpMovieName{
+
+.mpMovieName {
     width: 100%;
     height: calc(100% - 290px);
     display: flex;
     padding: 0px 100px;
     align-items: center;
 }
-.mpMovieName h1{
+
+.mpMovieName h1 {
     font-size: 3.6vw;
 }
 
 /* ***********************list********************** */
 
-.list{
+.list {
     width: 100%;
     height: 80px;
     margin-top: 60px;
@@ -155,7 +175,8 @@ nav{
     justify-content: space-between;
     padding: 0 40px;
 }
-.listGenres select{
+
+.listGenres select {
     background-color: transparent;
     border: 0;
     outline: 0;
@@ -163,12 +184,13 @@ nav{
     font-size: 1vw;
     font-weight: 500;
 }
-.listGenres select option{
+
+.listGenres select option {
     color: #fff;
     background-color: #141720;
 }
 
-.genres-btn{
+.genres-btn {
     height: 40px;
     width: 270px;
     background-color: #141720;
@@ -177,7 +199,8 @@ nav{
     align-items: center;
     border-radius: 13px;
 }
-.genres-btn button{
+
+.genres-btn button {
     background: transparent;
     border: none;
     outline: none;
@@ -186,7 +209,8 @@ nav{
     border-radius: 10px;
     font-size: 1vw;
 }
-.genres-btn button:hover{
+
+.genres-btn button:hover {
     background-color: #172032;
     cursor: pointer;
     color: #055ABC;
@@ -194,26 +218,29 @@ nav{
 
 /* ***********************movie cards******************* */
 
-.movie-cards{
+.movie-cards {
     margin-top: 40px;
     display: flex;
     gap: 30px;
     row-gap: 60px;
     flex-wrap: wrap;
 }
-.box1{
+
+.box1 {
     width: 12vw;
     height: 50vh;
     color: #fff;
 }
-.img-box{
+
+.img-box {
     width: 100%;
     height: 80%;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
 }
-.img-box img{
+
+.img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -222,35 +249,42 @@ nav{
     transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     cursor: pointer;
 }
-.box1 h2{
+
+.box1 h2 {
     font-size: 1.25vw;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.box1 p{
+
+.box1 p {
     font-size: 0.9vw;
 }
-.img-box:hover img{
+
+.img-box:hover img {
     transform: scale(1.09);
     filter: blur(5px);
 }
-.img-box:hover .bookmark{
+
+.img-box:hover .bookmark {
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.img-box:hover .rating{
+
+.img-box:hover .rating {
     opacity: 1;
     cursor: pointer;
 }
-.img-box:hover .play-btn{
+
+.img-box:hover .play-btn {
     opacity: 1;
     cursor: pointer;
 }
-.bookmark{
+
+.bookmark {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -268,7 +302,8 @@ nav{
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
-.rating{
+
+.rating {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -282,10 +317,12 @@ nav{
     border-radius: 10px;
     transition: opacity 0.2s ease-in-out;
 }
-.rating i{
+
+.rating i {
     color: #055ABC;
 }
-.play-btn{
+
+.play-btn {
     position: absolute;
     top: 42%;
     left: 33%;
@@ -299,16 +336,17 @@ nav{
     align-items: center;
     transition: opacity 0.2s ease-in-out;
 }
-.play-btn i{
+
+.play-btn i {
     font-size: 22px;
     color: rgb(223, 214, 214);
 }
 
 
-/* ******************************load more btn************************** */
+/* ******************************load more************************** */
 
 
-.load-more{
+.load-more {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -316,7 +354,8 @@ nav{
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
-.load-more button{
+
+.load-more button {
     padding: 20px 50px;
     font-size: 1.1vw;
     font-weight: 600;
@@ -330,25 +369,29 @@ nav{
 
 /* **********************category*********************** */
 
-.category{
-    width: 100%;
-    height: 68vh;
+.category {
+    /* width: 100%;
+    height: 70vh; */
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
-.category h1{
+
+.category h1 {
     color: #fff;
     font-size: 2.8vw;
     font-weight: 500;
 }
-.category-cards{
+
+.category-cards {
     margin-top: 3.5vw;
     display: flex;
     flex-wrap: wrap;
     gap: 2.7vw;
 }
-.cat-box{
+
+.cat-box {
     width: 18.4vw;
     height: 22vh;
     background-color: black;
@@ -357,7 +400,8 @@ nav{
     border-radius: 20px;
     cursor: pointer;
 }
-.cat-box img{
+
+.cat-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -365,10 +409,12 @@ nav{
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
 }
-.cat-box:hover img{
+
+.cat-box:hover img {
     transform: scale(1.1);
 }
-.cat-box p{
+
+.cat-box p {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -376,10 +422,12 @@ nav{
     font-weight: 600;
     color: #fff;
 }
-.cat-box p:hover{
+
+.cat-box p:hover {
     color: #055ABC;
 }
-.cat-box span{
+
+.cat-box span {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -393,27 +441,131 @@ nav{
 }
 
 
+/* ************************live TV********************* */
+
+.liveTv{
+    width: 100%;
+    height: 70.8vh;
+    margin-bottom: 50px;
+}
+.liveTv h1{
+    color: #fff;
+    font-size: 2.6vw;
+    font-weight: 500;
+}
+.live-panel{
+    width: 100%;
+    height: 55vh;
+    margin-top: 60px;
+}
+.live-box{
+    width: 399px;
+    height: 340px;
+    position: relative;
+    cursor: pointer;
+}
+.live-footer{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+.live-panel{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.live-box img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+.live-footer img{
+    width: 3vw;
+    border-radius: 10px;
+}
+.live-footer h2{
+    font-size: 1.5vw;
+    width: 15vw;
+    color: #e0d8d8;
+}
+.viewers{
+    position: absolute;
+    bottom: 6.5vw;
+    left: 2vw;
+    background-color: #18253f;
+    font-weight: 700;
+    font-size: 1vw;
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: #fff;
+}
+.live-sign{
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: rgb(255, 30, 10);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+.live-play{
+    position: absolute;
+    top: 31%;
+    left: 43%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3.5px solid rgb(203, 195, 195);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+.live-box:hover .live-play{
+    opacity: 1;
+}
+.live-box:hover h2{
+    color: #055ABC;
+}
+
+
+
+
+
+
+
 
 /* ******************media queries********************* */
 
 @media (max-width:600px) {
-    .container{
+    .container {
         padding: 0 25px;
     }
-    .left-nav h1{
+
+    .left-nav h1 {
         font-size: 7vw;
     }
-    .left-nav .menu-bar{
+
+    .left-nav .menu-bar {
         display: block;
         font-size: 6vw;
         color: #fff;
         font-weight: 600;
         margin-right: -65px;
     }
-    #h1none{
+
+    #h1none {
         display: block;
     }
-    .right-nav .search-glass{
+
+    .right-nav .search-glass {
         display: block;
         color: #055ABC;
         position: absolute;
@@ -421,32 +573,39 @@ nav{
         right: 30%;
         top: 42%;
     }
-    .left-nav a{
+
+    .left-nav a {
         display: none;
     }
-    .left-nav .livedot{
+
+    .left-nav .livedot {
         display: none;
     }
-    .input-div{
+
+    .input-div {
         display: none;
     }
+
     .right-nav button {
         font-size: 4vw;
         position: absolute;
         top: 44%;
         right: 1%;
     }
-    .movie-poster{
+
+    .movie-poster {
         display: none;
     }
-    .list{
+
+    .list {
         margin-top: 20px;
         flex-direction: column;
         align-items: start;
         justify-content: center;
         height: 120px;
     }
-    .listGenres select{
+
+    .listGenres select {
         background-color: transparent;
         border: 0;
         outline: 0;
@@ -455,45 +614,52 @@ nav{
         font-weight: 500;
         /* margin-top: 10px; */
     }
-    .genres-btn{
+
+    .genres-btn {
         width: 260px;
         margin-top: 15px;
     }
-    .genres-btn button{
+
+    .genres-btn button {
         font-size: 4vw;
     }
-    .movie-cards{
+
+    .movie-cards {
         margin-top: 40px;
         display: flex;
         gap: 18.6px;
         row-gap: 40px;
         flex-wrap: wrap;
     }
-    .box1{
+
+    .box1 {
         width: 41vw;
         height: 40vh;
         gap: 1px;
     }
-    .box1 h2{
+
+    .box1 h2 {
         font-size: 4.5vw;
         font-weight: 600;
         margin-top: 10px;
         margin-bottom: 5px;
     }
-    .box1 p{
+
+    .box1 p {
         font-size: 3vw;
     }
 
-    .load-more{
+    .load-more {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10vw;
     }
-    .load-more button{
+
+    .load-more button {
         padding: 20px 50px;
-        font-size:4vw;
+        font-size: 4vw;
         font-weight: 600;
         border-radius: 15px;
         color: #fff;
@@ -503,27 +669,28 @@ nav{
         cursor: pointer;
     }
 
-    .category{
-        width: 100%;
-        height: 68vh;
+    .category {
         display: flex;
-        flex-direction: column;
         margin-top: 70px;
+        height: 225vh;
     }
-    .category h1{
+
+    .category h1 {
         color: #fff;
         font-size: 10vw;
         font-weight: 500;
         margin-bottom: 60px;
     }
-    .category-cards{
+
+    .category-cards {
         margin-top: 3.5vw;
         display: flex;
         flex-wrap: wrap;
         gap: 2.7vw;
         row-gap: 40px;
     }
-    .cat-box{
+
+    .cat-box {
         width: 90vw;
         height: 22vh;
         background-color: black;
@@ -532,17 +699,20 @@ nav{
         border-radius: 20px;
         cursor: pointer;
     }
-    .cat-box img{
+
+    .cat-box img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         opacity: 0.7;
         transition: transform 0.3s ease-in-out;
     }
-    .cat-box:hover img{
+
+    .cat-box:hover img {
         transform: scale(1.1);
     }
-    .cat-box p{
+
+    .cat-box p {
         position: absolute;
         bottom: 20px;
         left: 20px;
@@ -550,10 +720,12 @@ nav{
         font-weight: 600;
         color: #fff;
     }
-    .cat-box p:hover{
+
+    .cat-box p:hover {
         color: #055ABC;
     }
-    .cat-box span{
+
+    .cat-box span {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -565,5 +737,31 @@ nav{
         background: transparent;
         background-color: #1e2432;
     }
-    
+    .live-panel{
+        row-gap: 30px;
+    }
+    .liveTv h1{
+        font-size: 9vw;
+    }
+    .viewers{
+        bottom: 23vw;
+        left: 10vw;
+        font-size: 3.5vw;
+    }
+    .live-footer{
+        margin-top: 10px;
+        gap: 15px;
+    }
+    .live-sign{
+        top: 10vw;
+        left: 10vw;
+        font-size: 3.5vw;
+    }
+    .live-footer img{
+        width: 10vw;
+    }
+    .live-footer h2{
+        font-size: 5.5vw;
+        width: 100%;
+    }
 }
