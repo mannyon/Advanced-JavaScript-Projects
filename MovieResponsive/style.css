@@ -10,7 +10,7 @@
 
 .container{
     width: 100%;
-    height: 2000px;
+    height: 700vh;
     background-color: #141720;
     padding: 0 130px;
 }
@@ -207,8 +207,8 @@ nav{
     color: #fff;
 }
 .img-box{
-    width: 12vw;
-    height: 40vh;
+    width: 100%;
+    height: 80%;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -216,12 +216,14 @@ nav{
 .img-box img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 20px;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    object-position: center;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     cursor: pointer;
 }
 .box1 h2{
-    font-size: 1.2vw;
+    font-size: 1.25vw;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -264,7 +266,7 @@ nav{
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.8);
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 .rating{
     position: absolute;
@@ -278,7 +280,7 @@ nav{
     background: rgba(0, 0, 0, 0.8);
     font-size: 15px;
     border-radius: 10px;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 .rating i{
     color: #055ABC;
@@ -295,18 +297,108 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 .play-btn i{
     font-size: 22px;
     color: rgb(223, 214, 214);
 }
 
+
+/* ******************************load more btn************************** */
+
+
+.load-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.load-more button{
+    padding: 20px 50px;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #055ABC;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* **********************category*********************** */
+
+.category{
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.category h1{
+    color: #fff;
+    font-size: 2.8vw;
+    font-weight: 500;
+}
+.category-cards{
+    margin-top: 3.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.7vw;
+}
+.cat-box{
+    width: 18.4vw;
+    height: 22vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cat-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.cat-box:hover img{
+    transform: scale(1.1);
+}
+.cat-box p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #fff;
+}
+.cat-box p:hover{
+    color: #055ABC;
+}
+.cat-box span{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: transparent;
+    background-color: #1e2432;
+}
+
+
+
 /* ******************media queries********************* */
 
 @media (max-width:600px) {
     .container{
-        padding: 0 30px;
+        padding: 0 25px;
     }
     .left-nav h1{
         font-size: 7vw;
@@ -370,4 +462,108 @@ nav{
     .genres-btn button{
         font-size: 4vw;
     }
+    .movie-cards{
+        margin-top: 40px;
+        display: flex;
+        gap: 18.6px;
+        row-gap: 40px;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 41vw;
+        height: 40vh;
+        gap: 1px;
+    }
+    .box1 h2{
+        font-size: 4.5vw;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .box1 p{
+        font-size: 3vw;
+    }
+
+    .load-more{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vw;
+    }
+    .load-more button{
+        padding: 20px 50px;
+        font-size:4vw;
+        font-weight: 600;
+        border-radius: 15px;
+        color: #fff;
+        background-color: #055ABC;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .category{
+        width: 100%;
+        height: 68vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .category h1{
+        color: #fff;
+        font-size: 10vw;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+    .category-cards{
+        margin-top: 3.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.7vw;
+        row-gap: 40px;
+    }
+    .cat-box{
+        width: 90vw;
+        height: 22vh;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .cat-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+        transition: transform 0.3s ease-in-out;
+    }
+    .cat-box:hover img{
+        transform: scale(1.1);
+    }
+    .cat-box p{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 6vw;
+        font-weight: 600;
+        color: #fff;
+    }
+    .cat-box p:hover{
+        color: #055ABC;
+    }
+    .cat-box span{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 5vw;
+        font-weight: 600;
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background: transparent;
+        background-color: #1e2432;
+    }
+    
 }
