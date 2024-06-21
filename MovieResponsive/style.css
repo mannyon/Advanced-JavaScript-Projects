@@ -10,7 +10,7 @@
 
 .container {
     width: 100%;
-    height: 900vh;
+    height: 455vh;
     background-color: #141720;
     padding: 0 130px;
 }
@@ -370,8 +370,6 @@ nav {
 /* **********************category*********************** */
 
 .category {
-    /* width: 100%;
-    height: 70vh; */
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
@@ -446,7 +444,6 @@ nav {
 .liveTv{
     width: 100%;
     height: 70.8vh;
-    margin-bottom: 50px;
 }
 .liveTv h1{
     color: #fff;
@@ -536,8 +533,90 @@ nav {
 }
 
 
+/* ***************************footer******************************* */
 
-
+footer{
+    width: 100%;
+    height: 450px;
+    padding: 0px 130px;
+    background-color: #0f1521;
+}
+.upper-footer{
+    height: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.left-upper-footer img{
+    width: 8vw;
+    margin-bottom: 30px;
+}
+.left-upper-footer p{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(182, 175, 175);
+    margin-bottom: 25px;
+}
+.social-media-icons{
+    display: flex;
+    font-size: 1.8vw;
+    gap: 23px;
+    color: #fff;
+}
+.social-media-icons i{
+    cursor: pointer;
+}
+.right-upper-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.right-upper-footer h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.noHeading h2{
+    opacity: 0;
+}
+.right-upper-footer p{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(182, 175, 175);
+}
+.right-upper-footer p:hover, h2:hover{
+    cursor: pointer;
+    color: #055ABC;
+}
+.noPointer:hover{
+    cursor: default;
+}
+.lower-footer{
+    width: 100%;
+    height: calc(100% - 360px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(182, 175, 175);
+    font-weight: 600;
+    border-top: 2px solid #141720;
+}
+.privacy :nth-child(1){
+    margin-right: 20px;
+}
+.privacy span:hover{
+    color: #055ABC;
+    cursor: pointer;
+}
+.privacy2{
+    display: none;
+}
+.copyright2{
+    display: none;
+}
 
 
 
@@ -547,6 +626,7 @@ nav {
 @media (max-width:600px) {
     .container {
         padding: 0 25px;
+        height: 830vh;
     }
 
     .left-nav h1 {
@@ -612,7 +692,6 @@ nav {
         color: #fff;
         font-size: 4vw;
         font-weight: 500;
-        /* margin-top: 10px; */
     }
 
     .genres-btn {
@@ -763,5 +842,54 @@ nav {
     .live-footer h2{
         font-size: 5.5vw;
         width: 100%;
+    }
+    .liveTv{
+        height: 148vh;
+    }
+    footer{
+        padding: 0 25px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 50px;
+        gap: 70px;
+        height: 80vh;
+    }
+    .left-upper-footer img{
+        width: 30vw;
+    }
+    .social-media-icons {
+        font-size: 6vw;
+    }
+    .lower-footer{
+        height: 18vh;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .privacy{
+        display: none;
+    }
+    .copyright{
+        display: none;
+    }
+    .privacy2{
+        display: block;
+        font-size: 15px;
+    }
+    .privacy2 :nth-child(1){
+        margin-right: 30px;
+    }
+    .copyright2{
+        display: block;
+        font-size: 15px;
     }
 }
