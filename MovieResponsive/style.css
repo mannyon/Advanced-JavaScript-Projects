@@ -618,6 +618,14 @@ footer{
     display: none;
 }
 
+.lmao{
+    height: 200px;
+    width: 200px;
+    /* background-color: coral; */
+    position: absolute;
+    top: 0;
+}
+
 
 
 
@@ -672,7 +680,11 @@ footer{
         top: 44%;
         right: 1%;
     }
+/* ****************************************** */
+    
 
+
+/* ************************************************* */
     .movie-poster {
         display: none;
     }
