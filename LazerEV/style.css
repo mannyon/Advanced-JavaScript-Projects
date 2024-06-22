@@ -15,33 +15,81 @@ nav{
     position: fixed;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 2vw 10.4vw;
     justify-content: space-between;
+    /* background-color: greenyellow; */
+    height: 12vh;
 }
 
 .nav-part2{
     display: flex;
     gap: 2vw;
+    align-items: flex-start;
+    padding: 0vh 0;
+    position: relative;
+    z-index: 10;
 }
 .nav-part2 h4{
-    font-size: 0.76vw;
+    font-size: 0.73vw;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 2.6vw;
+}
+.nav-part2 h5{
+    margin-bottom: 1vw;
+    /* background-color: red; */
+    transform: translateY(25px);
+    display: none;
+    overflow: hidden;
+
+}
+.nav-part2 h5 span{
+    font-size: 0.77vw;
+    font-weight: 400;
+    display: inline-block;
 }
 
-nav:hover #nav-bottom{
-    height: 100%;
-    bottom: -100%;
+
+.bottom-div{
+    margin-top: 2vw;
 }
 
+.bottom-div h5{
+    margin-bottom: 0.4vw;
+    margin-bottom: 0.4vw;
+}
+
+.bottom-div h5 span{
+    font-weight: 500;
+    font-size: 0.7vw;
+    display: inline-block;
+    font-size: 0.75vw;
+    display: none;
+}
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    font-size: 0.85vw;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+}
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.6vw;
+}
 #nav-bottom{
-    height: 0%;
-    position: absolute;
     width: 79%;
-    transition: all 0.65s ease;
-    bottom: 0;
-    border-bottom: 1px solid #dadada;
+    height: 0vh;
+    position: absolute;
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
 }
 
 #page1{
