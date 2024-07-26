@@ -63,7 +63,7 @@ function circleMouseFollower(xscale, yscale) {
 
 circleChaptaKaro();
 circleMouseFollower();
-// firstPageAnim();
+firstPageAnim();
 
 document.querySelectorAll(".elem").forEach(function (elem){
     var rotate = 0;
